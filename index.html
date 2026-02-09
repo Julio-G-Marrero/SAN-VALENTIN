@@ -109,12 +109,25 @@
       font-size:14px;
       letter-spacing:.2px;
     }
-/* Kitty esquina inferior izquierda */
 .kitty-fixed.left{
   left: 18px;
   right: auto;
   bottom: 18px;
   transform: scaleX(-1); /* mira hacia el centro */
+}
+.kitty-fixed.top-left{
+  top: 18px;
+  left: 18px;
+  right: auto;
+  bottom: auto;
+  transform: scaleX(-1); /* mira hacia el centro */
+}
+@media (max-width: 480px){
+  .kitty-fixed.top-left{
+    width: 130px;
+    top: 70px;
+    left: 8px;
+  }
 }
 
     h1{
@@ -296,7 +309,8 @@
         <a href="https://tenor.com/view/hello-kitty-gif-6682255795123802665">Hello Kitty Sticker</a>
     </div>
     </div>
-<div class="kitty-fixed left">
+
+<div class="kitty-fixed top-left">
   <div class="tenor-gif-embed"
        data-postid="19413573"
        data-share-method="host"
@@ -305,6 +319,7 @@
     <a href="https://tenor.com/view/kitty-gif-19413573">Kitty Sticker</a>
   </div>
 </div>
+
 
   <script>
     // ===== Personalización por URL =====
